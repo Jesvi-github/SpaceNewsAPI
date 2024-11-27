@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.VBox?>
-
-<VBox alignment="CENTER" spacing="10" style="-fx-padding: 10;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacenews.spacenewsfetcher.SpaceNewsController">
-    <ListView fx:id="articleListView" prefHeight="380" prefWidth="580" />
-    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="93.0" text="Refresh" />
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.spacenews.spacenews.SpaceNewsController"
+      spacing="10"
+      alignment="CENTER">
+    <Label text="Space News" style="-fx-font-size: 24px; -fx-text-fill: blue;" />
+    <TextField fx:id="searchField" promptText="Enter your query here" />
+    <Button fx:id="searchButton" text="Search" onAction="#fetchNews" />
+    <ListView fx:id="newsListView" prefHeight="400" prefWidth="600" />
 </VBox>
