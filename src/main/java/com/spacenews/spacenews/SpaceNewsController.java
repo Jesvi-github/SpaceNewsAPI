@@ -32,11 +32,10 @@ public class SpaceNewsController {
     @FXML
     private Button loadMoreButton;
 
-    private JSONArray allNews; // To store all fetched news articles
-    private int newsIndex = 0; // To keep track of the current batch of displayed news
-    private static final int PAGE_SIZE = 5; // Number of articles to load per batch
+    private JSONArray allNews;
+    private int newsIndex = 0;
+    private static final int PAGE_SIZE = 8;
 
-    // Fetch news based on the search field input
     @FXML
     private void fetchNews() {
         String query = searchField.getText();
@@ -79,7 +78,7 @@ public class SpaceNewsController {
         // Update the index for the next batch
         newsIndex = endIndex;
 
-        // Disable "Load More" button if all articles are loaded
+
         if (newsIndex >= allNews.size()) {
             loadMoreButton.setDisable(true); // Disable the button when all news is loaded
         }
@@ -148,7 +147,7 @@ public class SpaceNewsController {
                     String title = (String) dataItem.get("title");
                     String description = (String) dataItem.get("description");
 
-                    // Assuming the image URL is in the `links` array
+
                     JSONArray links = (JSONArray) article.get("links");
                     String imageUrl = null;
                     if (links != null && links.size() > 0) {

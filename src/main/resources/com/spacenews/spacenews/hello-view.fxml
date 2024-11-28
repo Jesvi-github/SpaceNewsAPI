@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="601.0" prefWidth="600.0" spacing="10" style="-fx-background-image: url('/com/spacenews/spacenews/bk.jpeg'); -fx-background-size: cover;" stylesheets="/com/spacenews/spacenews/styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacenews.spacenews.SpaceNewsController">
+<VBox alignment="CENTER" prefHeight="611.0" prefWidth="600.0" spacing="10" style="-fx-background-image: url('/com/spacenews/spacenews/BackGround.jpeg'); -fx-background-size: cover;" stylesheets="/com/spacenews/spacenews/styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacenews.spacenews.SpaceNewsController">
 
     <!-- Title Label -->
     <Label styleClass="label" text="Space News" />
@@ -22,7 +22,7 @@
     <ListView fx:id="newsListView" onMouseClicked="#onNewsItemClick" prefHeight="374.0" prefWidth="600.0" styleClass="list-view" />
 
     <!-- Load More Button -->
-    <Button id="loadMoreButton" fx:id="loadMoreButton" onAction="#loadMoreNews" prefHeight="37.0" prefWidth="186.0" styleClass="button" text="Load More">
+    <Button id="loadMoreButton" fx:id="loadMoreButton" onAction="#loadMoreNews" prefHeight="2.0" prefWidth="186.0" styleClass="button" text="Load More">
         <font>
             <Font size="16.0" />
         </font>

@@ -17,7 +17,7 @@ public class SpaceNewsApi extends Application {
         // Set the title of the window
         primaryStage.setTitle("Space News");
 
-        // Set the app icon (make sure the image path is correct)
+
         primaryStage.getIcons().add(new Image("file:src/main/resources/com/spacenews/spacenews/icon.jpeg"));
 
         // Set the scene

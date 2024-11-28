@@ -1,19 +1,19 @@
-/* Global Styles */
+
 .root {
     -fx-font-family: 'Segoe UI', sans-serif;
 }
 
-/* Background Styling for the VBox */
+
 .vbox {
     -fx-padding: 20;
     -fx-alignment: center;
     -fx-background-size: cover;
-    -fx-background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+    -fx-background-color: rgba(0, 0, 0, 0.5);
     -fx-background-blend-mode: overlay;
     -fx-spacing: 15;
 }
 
-/* Title Label Styling */
+
 .label {
     -fx-font-size: 28px;
     -fx-text-fill: #ffffff;
@@ -22,7 +22,7 @@
     -fx-padding: 10;
 }
 
-/* TextField Styling */
+
 .text-field {
     -fx-font-size: 16px;
     -fx-prompt-text-fill: #aaaaaa;
@@ -34,7 +34,7 @@
     -fx-text-fill: #333333;
 }
 
-/* Button Styling */
+
 .button {
     -fx-font-size: 16px;
     -fx-font-weight: bold;
@@ -55,7 +55,7 @@
     -fx-background-color: #2E7D32;
 }
 
-/* ListView Styling */
+
 .list-view {
     -fx-background-color: rgba(255, 255, 255, 0.9);
     -fx-border-color: #4CAF50;
@@ -72,7 +72,7 @@
     -fx-text-fill: #333333;
 }
 
-/* Load More Button Styling */
+
 #loadMoreButton {
     -fx-background-color: linear-gradient(to bottom, #2e8941, #118d17);
     -fx-text-fill: white;
