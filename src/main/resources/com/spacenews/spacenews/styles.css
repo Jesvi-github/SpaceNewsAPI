@@ -1,0 +1,87 @@
+/* Global Styles */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background Styling for the VBox */
+.vbox {
+    -fx-padding: 20;
+    -fx-alignment: center;
+    -fx-background-size: cover;
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+    -fx-background-blend-mode: overlay;
+    -fx-spacing: 15;
+}
+
+/* Title Label Styling */
+.label {
+    -fx-font-size: 28px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0.5, 2, 2);
+    -fx-padding: 10;
+}
+
+/* TextField Styling */
+.text-field {
+    -fx-font-size: 16px;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+    -fx-text-fill: #333333;
+}
+
+/* Button Styling */
+.button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #388E3C);
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 3, 0.5, 0, 2);
+    -fx-cursor: hand;
+    -fx-padding: 10 15;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #66BB6A, #43A047);
+}
+
+.button:pressed {
+    -fx-background-color: #2E7D32;
+}
+
+/* ListView Styling */
+.list-view {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+    -fx-control-inner-background: transparent;
+}
+
+.list-view .cell {
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+    -fx-text-fill: #333333;
+}
+
+/* Load More Button Styling */
+#loadMoreButton {
+    -fx-background-color: linear-gradient(to bottom, #2e8941, #118d17);
+    -fx-text-fill: white;
+}
+
+#loadMoreButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #146211, #1b460a);
+}
+
+#loadMoreButton:pressed {
+    -fx-background-color: #166011;
+}
